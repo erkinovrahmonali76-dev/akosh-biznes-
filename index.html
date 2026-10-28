@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#061326">
+<title>AKOSH BIZNES — AI yordamchi</title>
+<style>
+:root{--bg:#06101f;--panel:#0b1a2d;--panel2:#0d2139;--line:#17385a;--text:#f4f8ff;--muted:#a8bfd9;--blue:#087cff;--cyan:#19d4ff;--violet:#5845ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% 12%,#09264a 0,transparent 38%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}.nav{position:sticky;top:0;z-index:5;background:#06101feF;border-bottom:1px solid #163251;backdrop-filter:blur(14px)}.navin{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:1px}.logo{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(140deg,#08a6ff,#413cff);font-size:23px;font-weight:1000;box-shadow:0 0 24px #087cff45}.brand small{display:block;color:#93dfff;font-size:10px;letter-spacing:3px}.links{display:flex;gap:25px;color:#c3d6eb;font-size:13px}.links a:hover{color:#fff}.btn{border:1px solid #168fff;border-radius:13px;padding:12px 18px;background:linear-gradient(110deg,#087cff,#2455ff);color:white;font-weight:750;display:inline-flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.12)}.btn.ghost{background:transparent;border-color:#3479b9}.hero{padding:78px 0 60px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:48px;min-height:510px}.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid #245e9b;background:#0b2340;border-radius:99px;padding:8px 13px;color:#a9dcff;font-size:12px}.hero h1{font-size:clamp(37px,5vw,60px);line-height:1.06;letter-spacing:-2px;margin:20px 0}.gradient{background:linear-gradient(90deg,#1ccfff,#2776ff,#8872ff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:#b8cce2;line-height:1.8;font-size:16px;max-width:570px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:25px 0}.trust{display:flex;gap:18px;color:#a7c4df;font-size:13px}.mock{position:relative;min-height:340px;border:1px solid #1c4975;border-radius:26px;background:linear-gradient(145deg,#102a48,#071324 70%);padding:25px;box-shadow:0 30px 80px #0008,0 0 50px #007cff20;overflow:hidden}.mock:before{content:"";position:absolute;width:260px;height:260px;right:-60px;top:-65px;border-radius:50%;background:#087cff2c;filter:blur(5px)}.window{position:relative;border:1px solid #244a70;background:#071525;border-radius:18px;padding:17px}.windowtop{display:flex;align-items:center;gap:9px;padding-bottom:14px;border-bottom:1px solid #1b3652;font-weight:800}.dot{width:8px;height:8px;border-radius:50%;background:#15d6ff;box-shadow:0 0 12px #15d6ff}.bubble{margin-top:13px;background:#102a45;border:1px solid #234767;border-radius:12px;padding:12px;font-size:13px;color:#d5e8ff}.fakebtn{margin-top:9px;border-radius:10px;padding:10px;background:#0b3c6e;color:#d9f3ff;font-size:12px;text-align:center}.chart{display:flex;align-items:end;gap:9px;height:90px;margin:18px 0 0}.chart i{display:block;flex:1;border-radius:7px 7px 2px 2px;background:linear-gradient(#22d5ff,#087cff);box-shadow:0 0 15px #087cff22}.section{padding:60px 0}.heading{text-align:center;margin-bottom:30px}.heading h2{font-size:clamp(28px,4vw,38px);margin:0 0 10px;letter-spacing:-1px}.heading p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature,.price,.toolbox{border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#0b1a2d,#071321);padding:22px;transition:.2s}.feature:hover,.price:hover{transform:translateY(-3px);border-color:#287ac0}.ico{width:46px;height:46px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(140deg,#123c84,#1358bd);font-size:22px;margin-bottom:16px}.feature h3,.price h3{margin:0 0 9px}.feature p,.price p{color:var(--muted);line-height:1.65;font-size:14px;margin:0}.tools-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px;align-items:start}.tool-options{display:grid;gap:10px}.tool-option{width:100%;text-align:left;padding:14px;border:1px solid var(--line);border-radius:13px;background:#0a1a2c;color:#d7e8fa;cursor:pointer}.tool-option.active{border-color:#1a9aff;background:#0d2b4b;box-shadow:inset 3px 0 #12bfff}.toolbox label{display:block;font-size:13px;color:#c1d5e9;margin:14px 0 7px}.toolbox input,.toolbox textarea,.toolbox select{width:100%;border:1px solid #244361;border-radius:12px;padding:13px;background:#061321;color:#f2f8ff;font:inherit;outline:none}.toolbox textarea{min-height:100px;resize:vertical}.output{white-space:pre-wrap;background:#071321;border:1px dashed #28527b;border-radius:13px;padding:14px;margin-top:15px;color:#d7e9fa;min-height:70px;line-height:1.6}.price{position:relative}.price.popular{border-color:#128fff;box-shadow:0 0 35px #087cff18}.price .cost{font-size:30px;font-weight:900;margin:18px 0 4px}.price ul{list-style:none;padding:0;margin:18px 0;color:#d0e2f5;font-size:14px;line-height:2}.price li:before{content:"✓";color:#28e5ba;margin-right:9px}.price .btn{width:100%;margin-top:10px}.tag{position:absolute;top:14px;right:14px;border-radius:99px;background:#087cff;padding:6px 10px;font-size:11px;font-weight:800}.cta{border-radius:23px;padding:30px;background:linear-gradient(110deg,#263eff,#078dff,#3548ff);display:flex;align-items:center;justify-content:space-between;gap:20px}.cta h2{margin:0 0 7px}.cta p{margin:0;color:#e2f2ff}.cta .btn{background:white;color:#124b9d;border-color:white}.footer{border-top:1px solid #18314d;padding:25px 0;color:#91a9c2;font-size:13px}.footin{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.notice{font-size:12px;color:#829db8;margin-top:12px;line-height:1.6}.mobilemenu{display:none}
+@media(max-width:800px){.links{display:none}.hero{grid-template-columns:1fr;padding-top:48px;gap:28px}.mock{min-height:290px}.grid{grid-template-columns:repeat(2,1fr)}.tools-layout{grid-template-columns:1fr}.cta{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.navin{height:62px}.brand{font-size:14px}.logo{width:36px;height:36px}.nav .btn{padding:10px 12px;font-size:12px}.hero h1{letter-spacing:-1.4px}.hero p{font-size:14px}.grid{grid-template-columns:1fr}.section{padding:43px 0}.mock{padding:13px}.window{padding:13px}.trust{gap:10px;font-size:12px}.actions .btn{width:100%}.cta{padding:23px}.price .cost{font-size:27px}}
+
+.payment-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.paycard{border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#0b1a2d,#071321);padding:24px}
+.cardnum{font-size:clamp(20px,3vw,28px);font-weight:900;letter-spacing:1px;color:#fff;margin:12px 0;overflow-wrap:anywhere}
+.copybtn{border:1px solid #3479b9;background:#0a2037;color:#eaf6ff;padding:10px 13px;border-radius:10px;cursor:pointer}
+.uploadbox{border:1px dashed #2c6598;border-radius:14px;padding:16px;margin-top:14px;background:#071321}
+.uploadbox input{width:100%;color:#c7d9ec}
+#receiptPreview{display:none;max-width:100%;max-height:250px;border-radius:12px;margin-top:12px}
+.paynote{font-size:13px;line-height:1.65;color:#a8bfd9}
+@media(max-width:700px){.payment-grid{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin">
+<a class="brand" href="#asosiy"><span class="logo">A</span><span>AKOSH<small>B I Z N E S</small></span></a>
+<nav class="links"><a href="#asosiy">Asosiy</a><a href="#imkoniyatlar">Imkoniyatlar</a><a href="#yordamchi">AI yordamchi</a><a href="#narxlar">Narxlar</a></nav>
+<a class="btn" href="#yordamchi">Boshlash ↗</a>
+</div></header>
+<main>
+<section class="wrap hero" id="asosiy">
+<div>
+<div class="pill">✦ AI YORDAMCHI &nbsp;•&nbsp; BIZNES UCHUN</div>
+<h1>Biznesingizni <span class="gradient">yangi bosqichga</span> olib chiqing.</h1>
+<p>Reklama matnlari, mahsulot tavsiflari, tarjima, mijozlarga javob va kontent reja — biznesingiz uchun foydali vositalar bir joyda.</p>
+<div class="actions"><a class="btn" href="#yordamchi">✦ Bepul sinab ko‘rish</a><a class="btn ghost" href="#imkoniyatlar">Imkoniyatlarni ko‘rish →</a></div>
+<div class="trust"><span>✓ Tez</span><span>✓ Qulay</span><span>✓ O‘zbek tilida</span></div>
+</div>
+<div class="mock"><div class="window">
+<div class="windowtop"><span class="dot"></span> AKOSH BIZNES <span style="margin-left:auto;color:#76bfff;font-size:11px">AI STUDIO</span></div>
+<div class="bubble">Assalomu alaykum! 👋<br>Bugun biznesingiz uchun nima tayyorlaymiz?</div>
+<div class="fakebtn">✍️ Reklama matni yaratish</div><div class="fakebtn">🛍️ Mahsulot tavsifi</div><div class="fakebtn">💬 Mijozga javob</div>
+<div class="chart"><i style="height:35%"></i><i style="height:53%"></i><i style="height:44%"></i><i style="height:68%"></i><i style="height:62%"></i><i style="height:88%"></i><i style="height:100%"></i></div>
+</div></div>
+</section>
+<section class="section" id="imkoniyatlar"><div class="wrap">
+<div class="heading"><h2>Barcha kerakli vositalar <span class="gradient">bir joyda</span></h2><p>Vaqtingizni tejang, kontentingizni yaxshilang.</p></div>
+<div class="grid">
+<article class="feature"><div class="ico">✍️</div><h3>Reklama matnlari</h3><p>Telegram, Instagram va boshqa platformalar uchun e’tibor tortuvchi matnlar.</p></article>
+<article class="feature"><div class="ico">🛍️</div><h3>Mahsulot tavsifi</h3><p>Mahsulotingizning afzalliklarini tushunarli va jozibali ko‘rsating.</p></article>
+<article class="feature"><div class="ico">🌐</div><h3>Tarjima</h3><p>O‘zbek, rus va ingliz tillaridagi matnlarni tarjima qilishga yordam.</p></article>
+<article class="feature"><div class="ico">🗓️</div><h3>Kontent reja</h3><p>Haftalik post g‘oyalari va ijtimoiy tarmoqlar uchun reja.</p></article>
+<article class="feature"><div class="ico">💬</div><h3>Mijozga javob</h3><p>Mijozlar bilan muloyim va professional muloqot uchun javob shablonlari.</p></article>
+<article class="feature"><div class="ico">👑</div><h3>PRO imkoniyatlar</h3><p>Kelajakda kengaytirilgan limitlar va qo‘shimcha vositalar.</p></article>
+</div></div></section>
+<section class="section" id="yordamchi"><div class="wrap">
+<div class="heading"><h2>AI yordamchini sinab ko‘ring</h2><p>Hozircha demo generator: namunaviy matn yaratadi. Haqiqiy AI xizmatini keyin ulaymiz.</p></div>
+<div class="tools-layout"><div class="tool-options" id="options">
+<button class="tool-option active" data-type="ad">✍️ Reklama matni</button><button class="tool-option" data-type="product">🛍️ Mahsulot tavsifi</button><button class="tool-option" data-type="reply">💬 Mijozga javob</button><button class="tool-option" data-type="plan">🗓️ Kontent reja</button><button class="tool-option" data-type="translate">🌐 Tarjima</button>
+</div><div class="toolbox">
+<h3 id="toolTitle" style="margin:0">Reklama matni yaratish</h3>
+<label for="topic">Mahsulot yoki xizmat haqida yozing</label><input id="topic" placeholder="Masalan: erkaklar uchun yangi atir">
+<label for="platform">Platforma</label><select id="platform"><option>Instagram</option><option>Telegram</option><option>TikTok</option><option>Umumiy</option></select>
+<label for="details">Qo‘shimcha ma’lumot (ixtiyoriy)</label><textarea id="details" placeholder="Narx, chegirma, afzalliklar..."></textarea>
+<button class="btn" id="generate" style="width:100%;margin-top:16px">Matn yaratish ✨</button>
+<div class="output" id="output">Natijangiz shu yerda ko‘rinadi.</div><button class="btn ghost" id="copy" style="margin-top:10px;width:100%">Natijani nusxalash</button>
+<div class="notice" id="notice">Demo rejim: bu versiya serverga ulanmagan va haqiqiy AI modelidan foydalanmaydi.</div>
+</div></div></div></section>
+<section class="section" id="narxlar"><div class="wrap">
+<div class="heading"><h2>O‘zingizga mos rejani tanlang</h2><p>Tarifni tanlang, kartaga to‘lov qiling va chek rasmini yuboring.</p></div>
+<div class="grid">
+<article class="price"><h3>Bepul</h3><p>Boshlash uchun</p><div class="cost">0 so‘m</div><p>Doimiy</p><ul><li>Demo vositalar</li><li>Matn namunalari</li><li>Sayt bilan tanishish</li></ul><a class="btn ghost" href="#yordamchi">Bepul boshlash</a></article>
+<article class="price popular"><span class="tag">PRO</span><h3>PRO Haftalik</h3><p>Faol foydalanuvchilar uchun</p><div class="cost">25 000 so‘m</div><p>7 kun</p><ul><li>Kengaytirilgan AI vositalari*</li><li>Ko‘proq matn yaratish*</li><li>Qo‘shimcha shablonlar*</li></ul><a class="btn" href="#tolov">Haftalik PRO olish</a></article>
+<article class="price"><h3>PRO Oylik</h3><p>Uzoq muddat foydalanish</p><div class="cost">40 000 so‘m</div><p>30 kun</p><ul><li>PRO vositalari*</li><li>Kontent rejalari*</li><li>Yangi funksiyalar*</li></ul><a class="btn ghost" href="#tolov">Oylik PRO olish</a></article>
+</div>
+</div></section>
+
+<section class="section" id="tolov"><div class="wrap">
+<div class="heading"><h2>PRO obunani faollashtirish</h2><p>To‘lovdan so‘ng chek rasmini admin’ga yuboring.</p></div>
+<div class="payment-grid">
+<div class="paycard">
+<div class="ico">💳</div><h3>To‘lov rekvizitlari</h3>
+<p class="paynote">Karta egasi: <strong style="color:#fff">Boratova Zarnigor</strong></p>
+<div class="cardnum" id="cardNumber">6262 5701 3419 2691</div>
+<button class="copybtn" id="copyCard" type="button">Karta raqamini nusxalash</button>
+<p class="paynote" style="margin-top:16px">Haftalik PRO: <strong style="color:#fff">25 000 so‘m / 7 kun</strong><br>Oylik PRO: <strong style="color:#fff">40 000 so‘m / 30 kun</strong></p>
+<p class="paynote">To‘lov qilishdan oldin karta egasi va rekvizitlarni tekshiring. Faqat o‘zingizga tegishli yoki ruxsat berilgan karta orqali to‘lov qiling.</p>
+</div>
+<div class="paycard">
+<div class="ico">🧾</div><h3>To‘lov qildim</h3>
+<label for="planSelect" style="display:block;color:#c1d5e9;font-size:13px;margin:12px 0 7px">Tanlangan tarif</label>
+<select id="planSelect" style="width:100%;border:1px solid #244361;border-radius:12px;padding:13px;background:#061321;color:#f2f8ff;font:inherit">
+<option value="Haftalik PRO — 25 000 so‘m / 7 kun">Haftalik PRO — 25 000 so‘m / 7 kun</option>
+<option value="Oylik PRO — 40 000 so‘m / 30 kun">Oylik PRO — 40 000 so‘m / 30 kun</option>
+</select>
+<div class="uploadbox">
+<label for="receipt" style="display:block;color:#c1d5e9;font-size:13px;margin-bottom:10px">To‘lov cheki rasmini tanlang</label>
+<input id="receipt" type="file" accept="image/*">
+<img id="receiptPreview" alt="To‘lov cheki ko‘rinishi">
+<p class="paynote">Rasm tanlangach, Telegram admin chatini ochish tugmasi chiqadi. Telegram xavfsizlik cheklovi sabab sayt rasmni sizning o‘rningizga avtomatik jo‘nata olmaydi — chat ochilgach rasmni o‘zingiz yuboring.</p>
+</div>
+<button class="btn" id="sendReceipt" type="button" style="width:100%;margin-top:14px" disabled>Telegramda chekni yuborish ↗</button>
+<p class="notice" id="receiptStatus">Avval to‘lov cheki rasmini tanlang.</p>
+</div>
+</div>
+</div></section>
+
+<section class="wrap section"><div class="cta"><div><h2>Bugun boshlang — g‘oyangizni rivojlantiring.</h2><p>AKOSH BIZNES bilan biznes kontentingizni osonroq tayyorlang.</p></div><a class="btn" href="#yordamchi">Bepul sinab ko‘rish ↗</a></div></section>
+</main>
+<footer class="footer"><div class="wrap footin"><a class="brand" href="#asosiy"><span class="logo">A</span><span>AKOSH<small>B I Z N E S</small></span></a><span>© 2026 AKOSH BIZNES · Birinchi demo versiya</span><span><a href="https://t.me/akramovx7" target="_blank" rel="noopener">Admin bilan bog‘lanish: @akramovx7</a></span></div></footer>
+<script>
+const types={
+ad:{title:"Reklama matni yaratish",placeholder:"Masalan: erkaklar uchun yangi atir"},
+product:{title:"Mahsulot tavsifi",placeholder:"Masalan: simsiz quloqchin"},
+reply:{title:"Mijozga javob",placeholder:"Masalan: mijoz yetkazib berish haqida so‘radi"},
+plan:{title:"Kontent reja",placeholder:"Masalan: kiyim do‘koni"},
+translate:{title:"Tarjima uchun matn",placeholder:"Tarjima qilinadigan matnni kiriting"}
+};let current="ad";
+document.querySelectorAll(".tool-option").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".tool-option").forEach(x=>x.classList.remove("active"));b.classList.add("active");current=b.dataset.type;document.getElementById("toolTitle").textContent=types[current].title;document.getElementById("topic").placeholder=types[current].placeholder;document.getElementById("output").textContent="Natijangiz shu yerda ko‘rinadi.";}));
+document.getElementById("generate").addEventListener("click",()=>{const topic=document.getElementById("topic").value.trim();const platform=document.getElementById("platform").value;const details=document.getElementById("details").value.trim();if(!topic){document.getElementById("topic").focus();document.getElementById("output").textContent="Iltimos, mahsulot yoki mavzuni kiriting.";return;}let result="";
+if(current==="ad")result=`🔥 ${topic.toUpperCase()} — aynan siz izlagan taklif!\n\n${details||"Sifat, qulaylik va ajoyib taassurot — barchasi bir joyda."}\n\n📩 Batafsil ma’lumot va buyurtma uchun bizga yozing!\n\n#${platform.replace(/[^a-zA-Z]/g,"")} #AKOSHBIZNES`;
+if(current==="product")result=`🛍️ ${topic}\n\n${details||"Kundalik foydalanish uchun qulay va e’tiborga loyiq tanlov."}\n\n✅ Afzalliklari:\n• Qulay foydalanish\n• Zamonaviy tanlov\n• Sovg‘a uchun ham mos\n\n📩 Buyurtma va batafsil ma’lumot uchun bog‘laning.`;
+if(current==="reply")result=`Assalomu alaykum! 😊\n\n${topic}\n\nSavolingiz uchun rahmat! ${details||"Sizga batafsil ma’lumot berishdan mamnunmiz. Kerakli ma’lumotlarni aniqlashtirib, tez orada javob beramiz."}\n\nAKOSH BIZNES`;
+if(current==="plan")result=`📅 ${topic.toUpperCase()} — 7 kunlik kontent g‘oyasi\n\n1-kun: Brend va mahsulot bilan tanishtirish\n2-kun: Mahsulotning 3 ta afzalligi\n3-kun: Tez-tez beriladigan savol\n4-kun: Mahsulotdan foydalanish bo‘yicha maslahat\n5-kun: Mijoz muammosi va yechim\n6-kun: Savol-javob yoki so‘rovnoma\n7-kun: Haftaning taklifi va buyurtmaga chaqiriq\n\n${details}`;
+if(current==="translate")result=`Tarjima demo rejimida avtomatik tarjima xizmati ulanmagan.\n\nKiritilgan matn:\n${topic}\n\nKerakli tilni qo‘shimcha ma’lumotga yozing: ${details||"masalan, rus tiliga yoki ingliz tiliga"}`;
+document.getElementById("output").textContent=result;document.getElementById("notice").textContent="Eslatma: bu namunaviy demo natija, haqiqiy AI tomonidan yaratilmagan.";});
+document.getElementById("copy").addEventListener("click",async()=>{const t=document.getElementById("output").textContent;try{await navigator.clipboard.writeText(t);document.getElementById("copy").textContent="Nusxalandi ✓";setTimeout(()=>document.getElementById("copy").textContent="Natijani nusxalash",1600);}catch(e){const r=document.createRange();r.selectNodeContents(document.getElementById("output"));const s=window.getSelection();s.removeAllRanges();s.addRange(r);document.getElementById("copy").textContent="Matnni belgilang va nusxalang";}});
+
+const receiptInput=document.getElementById("receipt");
+const receiptPreview=document.getElementById("receiptPreview");
+const sendReceipt=document.getElementById("sendReceipt");
+const receiptStatus=document.getElementById("receiptStatus");
+let receiptUrl="";
+receiptInput.addEventListener("change",()=>{
+ const f=receiptInput.files&&receiptInput.files[0];
+ if(!f){sendReceipt.disabled=true;receiptPreview.style.display="none";receiptStatus.textContent="Avval to‘lov cheki rasmini tanlang.";return;}
+ if(!f.type.startsWith("image/")){receiptStatus.textContent="Iltimos, rasm faylini tanlang.";sendReceipt.disabled=true;return;}
+ if(receiptUrl)URL.revokeObjectURL(receiptUrl);
+ receiptUrl=URL.createObjectURL(f);receiptPreview.src=receiptUrl;receiptPreview.style.display="block";
+ sendReceipt.disabled=false;receiptStatus.textContent="Rasm tanlandi: "+f.name+". Telegramga o‘tish mumkin.";
+});
+document.getElementById("sendReceipt").addEventListener("click",()=>{
+ const f=receiptInput.files&&receiptInput.files[0];
+ if(!f){receiptStatus.textContent="Avval chek rasmini tanlang.";return;}
+ const plan=document.getElementById("planSelect").value;
+ const msg="Assalomu alaykum! AKOSH BIZNES PRO uchun to‘lov qildim. Tarif: "+plan+". Ismim/Telegram username: ____. Chek rasmini hozir yuboraman.";
+ const url="https://t.me/akramovx7?text="+encodeURIComponent(msg);
+ window.open(url,"_blank","noopener");
+ receiptStatus.textContent="Telegram chat ochildi. Chek rasmini chatga biriktirib, xabarni yuboring.";
+});
+document.getElementById("copyCard").addEventListener("click",async()=>{
+ const value="6262570134192691";
+ try{await navigator.clipboard.writeText(value);document.getElementById("copyCard").textContent="Nusxalandi ✓";}
+ catch(e){document.getElementById("copyCard").textContent="Karta: "+value;}
+});
+
+</script>
+</body></html>
